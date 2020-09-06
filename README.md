@@ -6,10 +6,10 @@ POC for Android/iOS app built with React/Ionic/Capacitor
 `cd react-ionic` <br/>
 `npm i`
 
-Init capacitor & tell it to watch the build folder for android/ios builds
+Init capacitor & tell it to watch the build folder for android/ios builds<br/>
 `npx cap init --web-dir build`
 
-Create android/ios projects
+Create android/ios projects<br/>
 `npx cap add android && npx cap add ios`
 
 # start
