@@ -5,7 +5,7 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import { IonApp, IonPage } from "@ionic/react";
+import { IonApp, IonPage, IonRow, IonCol, IonText } from "@ionic/react";
 import "./App.css";
 import Home from "./components/home/Home";
 import Signup from "./components/signUp/Signup";
@@ -13,6 +13,7 @@ import SignIn from "./components/signIn/SignIn";
 import ForgotPassword from "./components/forgotPassword/ForgotPassword";
 // import IndexView from "./indexView";
 import * as ROUTES from "./constants/routes";
+import { NavLink } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -32,6 +33,19 @@ class App extends Component {
               {/* <Route exact path="/" component={IndexView} /> */}
             </Switch>
           </IonPage>
+          <div style={{ position: "fixed", bottom: "0" }}>
+            <NavLink to="/">
+              <IonRow>
+                <IonCol>
+                  <IonText>
+                    <h6 no-margin text-end className="small black">
+                      Home
+                    </h6>
+                  </IonText>
+                </IonCol>
+              </IonRow>
+            </NavLink>
+          </div>
         </IonApp>
       </Router>
     );
