@@ -3,7 +3,7 @@
 POC for Android/iOS app built with React/Ionic/Capacitor
 
 # initial setup
-`cd react-ionic`
+`cd react-ionic` <br/>
 `npm i`
 
 Init capacitor & tell it to watch the build folder for android/ios builds
@@ -23,6 +23,6 @@ Create android/ios projects
 `npx cap open android`
 - Select an emulator from toolbar in Android Studion to run the mobile app after it's been built
 
-# open with x-code
+# open with xcode
 `npx cap open ios`
 - Select an emulator from toolbar in Xcode to run the mobile app after it's been built
